@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to DevOps Groups {% endblock %}</h1>
+    {% for group in groups %}
+        <a href="{{ url_for('group', group_id=group['id']) }}">
+            <h2>{{ group['id'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ group['name'] }}</span>
+        <a href="{{ url_for('edit', id=group['id']) }}">
+            <span class="badge badge-warning">Edit</span>
+        </a>
+        <hr>
+    {% endfor %}
+{% endblock %}

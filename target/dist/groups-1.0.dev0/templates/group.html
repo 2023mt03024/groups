@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} {{ group['name'] }} {% endblock %}</h1>
+
+<table style="width:100%", border="1">
+    {% if group['member1'] %}
+        <tr>
+            <td class="c1">{{ group['member1'] }}</td>
+        </tr>
+    {% endif %}
+    {% if group['member2'] %}
+        <tr>
+            <td class="c1">{{ group['member2'] }}</td>
+        </tr>
+    {% endif %}
+    {% if group['member3'] %}
+        <tr>
+            <td class="c1">{{ group['member3'] }}</td>
+        </tr>
+    {% endif %}
+    {% if group['member4'] %}
+        <tr>
+            <td class="c1">{{ group['member4'] }}</td>
+        </tr>
+    {% endif %}
+    {% if group['member5'] %}
+        <tr>
+            <td class="c1">{{ group['member5'] }}</td>
+        </tr>
+    {% endif %}
+</table>
+{% endblock %}
