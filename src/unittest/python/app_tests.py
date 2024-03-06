@@ -56,4 +56,14 @@ class AppTest(unittest.TestCase):
                                                member2 = '2023MT03145 - A.Purnima', member3='2023mt03082 - Harshita kaza', 
                                                member4 = '2023mt03196 - Patil Ajinkya Lalit', member5= ''))
         assert response.status_code == 302
+        
+    def test_edit_group3(self):
+        response = self.client.post("/1/edit", data=dict(name='Group 1', member1='2023MT03122 - VENKATA SAI VISWESWAR.K',
+                                               member2 = '2023MT03145 - A.Purnima', member3='2023mt03082 - Harshita kaza', 
+                                               member4 = '2023mt03196 - Patil Ajinkya Lalit', member5= '2023mt03196 - Patil Ajinkya Lalit'))
+        assert response.status_code == 302  
+
+    def test_delete_group3(self):
+        response = self.client.post("/2/delete")
+        assert response.status_code == 302
 
