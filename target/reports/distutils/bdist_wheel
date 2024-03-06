@@ -1,0 +1,59 @@
+running clean
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.12' does not exist -- can't clean it
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build\lib
+copying app.py -> build\lib
+copying initdb.py -> build\lib
+running build_scripts
+creating build\scripts-3.12
+copying scripts\schema.sql -> build\scripts-3.12
+c:\tmp\a1\groups\.pybuilder\plugins\cpython-3.12.2.final.0\Lib\site-packages\setuptools\_distutils\cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64
+creating build\bdist.win-amd64\wheel
+copying build\lib\app.py -> build\bdist.win-amd64\wheel\.
+copying build\lib\initdb.py -> build\bdist.win-amd64\wheel\.
+running install_egg_info
+running egg_info
+writing groups.egg-info\PKG-INFO
+writing dependency_links to groups.egg-info\dependency_links.txt
+writing namespace_packages to groups.egg-info\namespace_packages.txt
+writing top-level names to groups.egg-info\top_level.txt
+reading manifest file 'groups.egg-info\SOURCES.txt'
+writing manifest file 'groups.egg-info\SOURCES.txt'
+Copying groups.egg-info to build\bdist.win-amd64\wheel\.\groups-1.0.dev0-py3.12.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\groups-1.0.dev0.data
+creating build\bdist.win-amd64\wheel\groups-1.0.dev0.data\scripts
+copying build\scripts-3.12\schema.sql -> build\bdist.win-amd64\wheel\groups-1.0.dev0.data\scripts
+creating build\bdist.win-amd64\wheel\groups-1.0.dev0.dist-info\WHEEL
+creating 'dist\groups-1.0.dev0-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+adding 'app.py'
+adding 'initdb.py'
+adding 'groups-1.0.dev0.data/scripts/schema.sql'
+adding 'groups-1.0.dev0.dist-info/METADATA'
+adding 'groups-1.0.dev0.dist-info/WHEEL'
+adding 'groups-1.0.dev0.dist-info/namespace_packages.txt'
+adding 'groups-1.0.dev0.dist-info/top_level.txt'
+adding 'groups-1.0.dev0.dist-info/zip-safe'
+adding 'groups-1.0.dev0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel

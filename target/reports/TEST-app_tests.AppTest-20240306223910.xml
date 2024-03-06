@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app_tests.AppTest-20240306223910" tests="9" file="app_tests.py" time="0.122" timestamp="2024-03-06T22:39:13" failures="0" errors="0" skipped="0">
+	<testcase classname="app_tests.AppTest" name="test_about" time="0.046" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_create_group3" time="0.017" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_create_group_get" time="0.007" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_delete_group3" time="0.016" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_edit_group3" time="0.005" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_edit_group_get" time="0.010" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_get_group" time="0.003" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_home" time="0.008" timestamp="2024-03-06T22:39:13"/>
+	<testcase classname="app_tests.AppTest" name="test_view_group1" time="0.010" timestamp="2024-03-06T22:39:13"/>
+</testsuite>

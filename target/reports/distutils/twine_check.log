@@ -1,0 +1,7 @@
+Checking 
+c:\tmp\a1\groups\target\dist\groups-1.0.dev0\dist\groups-1.0.dev0-py3-none-any.
+whl: PASSED with warnings
+WARNING  `long_description_content_type` missing. defaulting to `text/x-rst`.  
+Checking 
+c:\tmp\a1\groups\target\dist\groups-1.0.dev0\dist\groups-1.0.dev0.tar.gz: PASSED with warnings
+WARNING  `long_description_content_type` missing. defaulting to `text/x-rst`.  

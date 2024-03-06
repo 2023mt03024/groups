@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app_tests.AppTest-20240306212154" tests="6" file="app_tests.py" time="0.092" timestamp="2024-03-06T21:21:57" failures="1" errors="0" skipped="0">
+	<testcase classname="app_tests.AppTest" name="test_about" time="0.042" timestamp="2024-03-06T21:21:56"/>
+	<testcase classname="app_tests.AppTest" name="test_create_group" time="0.008" timestamp="2024-03-06T21:21:56"/>
+	<testcase classname="app_tests.AppTest" name="test_get_group" time="0.003" timestamp="2024-03-06T21:21:57"/>
+	<testcase classname="app_tests.AppTest" name="test_home" time="0.007" timestamp="2024-03-06T21:21:57"/>
+	<testcase classname="app_tests.AppTest" name="test_view_group1" time="0.009" timestamp="2024-03-06T21:21:57"/>
+	<testcase classname="app_tests.AppTest" name="test_edit_group1" time="0.023" timestamp="2024-03-06T21:21:57">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 37, in test_edit_group1
+    assert 'Edit Group 1' in response.get_data(as_text=True)
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+</testsuite>

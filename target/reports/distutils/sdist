@@ -1,0 +1,36 @@
+running clean
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.12' does not exist -- can't clean it
+running sdist
+running egg_info
+creating groups.egg-info
+writing groups.egg-info\PKG-INFO
+writing dependency_links to groups.egg-info\dependency_links.txt
+writing namespace_packages to groups.egg-info\namespace_packages.txt
+writing top-level names to groups.egg-info\top_level.txt
+writing manifest file 'groups.egg-info\SOURCES.txt'
+reading manifest file 'groups.egg-info\SOURCES.txt'
+writing manifest file 'groups.egg-info\SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating groups-1.0.dev0
+creating groups-1.0.dev0\groups.egg-info
+creating groups-1.0.dev0\scripts
+copying files to groups-1.0.dev0...
+copying app.py -> groups-1.0.dev0
+copying initdb.py -> groups-1.0.dev0
+copying setup.py -> groups-1.0.dev0
+copying groups.egg-info\PKG-INFO -> groups-1.0.dev0\groups.egg-info
+copying groups.egg-info\SOURCES.txt -> groups-1.0.dev0\groups.egg-info
+copying groups.egg-info\dependency_links.txt -> groups-1.0.dev0\groups.egg-info
+copying groups.egg-info\namespace_packages.txt -> groups-1.0.dev0\groups.egg-info
+copying groups.egg-info\top_level.txt -> groups-1.0.dev0\groups.egg-info
+copying groups.egg-info\zip-safe -> groups-1.0.dev0\groups.egg-info
+copying scripts\schema.sql -> groups-1.0.dev0\scripts
+copying groups.egg-info\SOURCES.txt -> groups-1.0.dev0\groups.egg-info
+Writing groups-1.0.dev0\setup.cfg
+creating dist
+Creating tar archive
+removing 'groups-1.0.dev0' (and everything under it)

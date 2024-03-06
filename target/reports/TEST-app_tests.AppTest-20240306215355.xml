@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app_tests.AppTest-20240306215355" tests="7" file="app_tests.py" time="0.142" timestamp="2024-03-06T21:53:58" failures="3" errors="0" skipped="0">
+	<testcase classname="app_tests.AppTest" name="test_about" time="0.057" timestamp="2024-03-06T21:53:58"/>
+	<testcase classname="app_tests.AppTest" name="test_get_group" time="0.004" timestamp="2024-03-06T21:53:58"/>
+	<testcase classname="app_tests.AppTest" name="test_home" time="0.010" timestamp="2024-03-06T21:53:58"/>
+	<testcase classname="app_tests.AppTest" name="test_view_group1" time="0.012" timestamp="2024-03-06T21:53:58"/>
+	<testcase classname="app_tests.AppTest" name="test_create_group" time="0.037" timestamp="2024-03-06T21:53:58">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 39, in test_create_group
+    assert response.status_code == 200
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+	<testcase classname="app_tests.AppTest" name="test_delete_group3" time="0.011" timestamp="2024-03-06T21:53:58">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 51, in test_delete_group3
+    assert response.status_code == 200
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+	<testcase classname="app_tests.AppTest" name="test_edit_group3" time="0.011" timestamp="2024-03-06T21:53:58">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 46, in test_edit_group3
+    assert response.status_code == 200
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+</testsuite>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app_tests.AppTest-20240306214942" tests="7" file="app_tests.py" time="0.637" timestamp="2024-03-06T21:49:46" failures="2" errors="1" skipped="0">
+	<testcase classname="app_tests.AppTest" name="test_about" time="0.086" timestamp="2024-03-06T21:49:46"/>
+	<testcase classname="app_tests.AppTest" name="test_get_group" time="0.006" timestamp="2024-03-06T21:49:46"/>
+	<testcase classname="app_tests.AppTest" name="test_home" time="0.015" timestamp="2024-03-06T21:49:46"/>
+	<testcase classname="app_tests.AppTest" name="test_view_group1" time="0.014" timestamp="2024-03-06T21:49:46"/>
+	<testcase classname="app_tests.AppTest" name="test_delete_group3" time="0.017" timestamp="2024-03-06T21:49:46">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 52, in test_delete_group3
+    assert 'Welcome to DevOps Groups' in response.get_data(as_text=True)
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+	<testcase classname="app_tests.AppTest" name="test_edit_group3" time="0.015" timestamp="2024-03-06T21:49:46">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 47, in test_edit_group3
+    assert 'Edit "Group 1"' in response.get_data(as_text=True)
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+	<testcase classname="app_tests.AppTest" name="test_create_group" time="0.484" timestamp="2024-03-06T21:49:46">
+		<error type="BadRequestKeyError" message="400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'member5'"><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 35, in test_create_group
+    response = self.client.post("/create",
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\test.py", line 1016, in post
+    return self.open(*args, **kw)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\testing.py", line 222, in open
+    return Client.open(
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\test.py", line 970, in open
+    response = self.run_wsgi_app(environ.copy(), buffered=buffered)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\test.py", line 861, in run_wsgi_app
+    rv = run_wsgi_app(self.application, environ, buffered=buffered)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\test.py", line 1096, in run_wsgi_app
+    app_rv = app(environ, start_response)
+      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\main\python\app.py", line 47, in create
+    member5 = request.form['member5']
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+    ^^^^^^^^^^^^^^^^^
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'member5'
+]]></error>
+	</testcase>
+</testsuite>

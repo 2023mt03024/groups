@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app_tests.GetGroupTest-20240306205607" tests="1" file="app_tests.py" time="0.009" timestamp="2024-03-06T20:56:10" failures="0" errors="0" skipped="0">
+	<testcase classname="app_tests.GetGroupTest" name="test_get_group" time="0.009" timestamp="2024-03-06T20:56:10"/>
+</testsuite>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app_tests.AppTest-20240306220636" tests="9" file="app_tests.py" time="0.137" timestamp="2024-03-06T22:06:38" failures="2" errors="1" skipped="0">
+	<testcase classname="app_tests.AppTest" name="test_about" time="0.041" timestamp="2024-03-06T22:06:38"/>
+	<testcase classname="app_tests.AppTest" name="test_create_group_get" time="0.008" timestamp="2024-03-06T22:06:38"/>
+	<testcase classname="app_tests.AppTest" name="test_edit_group_get" time="0.010" timestamp="2024-03-06T22:06:38"/>
+	<testcase classname="app_tests.AppTest" name="test_get_group" time="0.002" timestamp="2024-03-06T22:06:38"/>
+	<testcase classname="app_tests.AppTest" name="test_home" time="0.007" timestamp="2024-03-06T22:06:38"/>
+	<testcase classname="app_tests.AppTest" name="test_view_group1" time="0.009" timestamp="2024-03-06T22:06:38"/>
+	<testcase classname="app_tests.AppTest" name="test_delete_group3" time="0.017" timestamp="2024-03-06T22:06:38">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 63, in test_delete_group3
+    assert 'Welcome to DevOps Groups' in response.get_data(as_text=True)
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+	<testcase classname="app_tests.AppTest" name="test_edit_group3" time="0.009" timestamp="2024-03-06T22:06:38">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 57, in test_edit_group3
+    assert response.status_code == 302
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+	<testcase classname="app_tests.AppTest" name="test_create_group3" time="0.034" timestamp="2024-03-06T22:06:38">
+		<error type="TypeError" message="EnvironBuilder.__init__() got an unexpected keyword argument 'redirects'"><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 45, in test_create_group3
+    response = self.client.post("/create",
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\test.py", line 1016, in post
+    return self.open(*args, **kw)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\testing.py", line 215, in open
+    builder = EnvironBuilder(self.application, *args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\vb602327\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\testing.py", line 86, in __init__
+    super(EnvironBuilder, self).__init__(path, base_url, *args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+TypeError: EnvironBuilder.__init__() got an unexpected keyword argument 'redirects'
+]]></error>
+	</testcase>
+</testsuite>

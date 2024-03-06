@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app_tests.GetGroupTest-20240306210956" tests="2" file="app_tests.py" time="0.067" timestamp="2024-03-06T21:09:58" failures="1" errors="0" skipped="0">
+	<testcase classname="app_tests.GetGroupTest" name="test_get_group" time="0.019" timestamp="2024-03-06T21:09:58"/>
+	<testcase classname="app_tests.GetGroupTest" name="test_home" time="0.048" timestamp="2024-03-06T21:09:58">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "c:\tmp\a1\groups\src\unittest\python\app_tests.py", line 19, in test_home
+    assert "POST method called" == response.get_data(as_text=True)
+    ^^^^^^^^^^^^^^^^^
+AssertionError
+]]></failure>
+	</testcase>
+</testsuite>
