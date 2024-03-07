@@ -1,4 +1,5 @@
-# reference: https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
+# reference: https://www.digitalocean.com/community/tutorials/
+#            how-to-make-a-web-application-using-flask-in-python-3
 import sqlite3
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
@@ -27,14 +28,14 @@ def index():
     conn.close()
     return render_template('index.html', groups=groups)
 
-@app.route('/about')  
-def about():  
-      return render_template('about.html')  
-    
+@app.route('/about')
+def about():
+      return render_template('about.html')
+
 @app.route('/<int:group_id>')
 def group(group_id):
     group = get_group(group_id)
-    return render_template('group.html', group=group)    
+    return render_template('group.html', group=group)
 
 @app.route('/create', methods=('GET', 'POST'))
 def create():
