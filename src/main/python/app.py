@@ -101,5 +101,5 @@ def delete(group_id):
     conn.execute('DELETE FROM groups WHERE id = ?', (group_id,))
     conn.commit()
     conn.close()
-    flash(f'"{group_obj['name']}" was successfully deleted!')
+    flash(f"\"{group_obj['name']}\" was successfully deleted!")
     return redirect(url_for('index'))
