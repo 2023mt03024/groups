@@ -22,7 +22,7 @@ def get_group(group_id):
     return group_obj
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your secret key'
+app.config['WTF_CSRF_ENABLED'] = False # Sensitive
 
 @app.route('/')
 def index():

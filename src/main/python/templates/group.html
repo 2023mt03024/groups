@@ -4,6 +4,12 @@
 <h1>{% block title %} {{ group['name'] }} {% endblock %}</h1>
 
 <table style="width:100%", border="1">
+    <caption>
+        Group member information
+    </caption>
+    <tr>
+        <th scope="col">Members</th>
+    </tr>
     {% if group['member1'] %}
         <tr>
             <td class="c1">{{ group['member1'] }}</td>
