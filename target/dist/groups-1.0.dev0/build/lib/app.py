@@ -23,7 +23,7 @@ def get_group(group_id):
     return group_obj
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv("FLASK_SECRET_KEY")
+app.config[os.getenv("FLASK_KEY")] = os.getenv("FLASK_KEY_VALUE")
 
 @app.route('/')
 def index():
