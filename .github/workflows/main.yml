@@ -25,10 +25,7 @@ jobs:
         run: pip install pylint
       
       - name: Install flask
-        run: pip install flask   
-
-      - name: Install flask_wtf
-        run: pip install flask_wtf           
+        run: pip install flask          
 
       - name: Run pylint
         run: pylint src/main/python/app.py src/main/python/initdb.py

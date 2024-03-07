@@ -43,3 +43,79 @@ Successfully installed Jinja2-3.1.3 MarkupSafe-2.1.5 Werkzeug-3.0.1 blinker-1.7.
 
 [notice] A new release of pip is available: 23.3.1 -> 24.0
 [notice] To update, run: python.exe -m pip install --upgrade pip
+Collecting flask_wtf
+  Using cached flask_wtf-1.2.1-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: flask in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask_wtf) (3.0.2)
+Requirement already satisfied: itsdangerous in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Collecting wtforms (from flask_wtf)
+  Using cached wtforms-3.1.2-py3-none-any.whl.metadata (5.3 kB)
+Requirement already satisfied: Werkzeug>=3.0.0 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (3.0.1)
+Requirement already satisfied: Jinja2>=3.1.2 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (3.1.3)
+Requirement already satisfied: click>=8.1.3 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (8.1.7)
+Requirement already satisfied: blinker>=1.6.2 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (1.7.0)
+Requirement already satisfied: markupsafe in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from wtforms->flask_wtf) (2.1.5)
+Requirement already satisfied: colorama in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from click>=8.1.3->flask->flask_wtf) (0.4.6)
+Using cached flask_wtf-1.2.1-py3-none-any.whl (12 kB)
+Using cached wtforms-3.1.2-py3-none-any.whl (145 kB)
+Installing collected packages: wtforms, flask_wtf
+Successfully installed flask_wtf-1.2.1 wtforms-3.1.2
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+Requirement already satisfied: flask_wtf in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (1.2.1)
+Requirement already satisfied: flask in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask_wtf) (3.0.2)
+Requirement already satisfied: itsdangerous in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Requirement already satisfied: wtforms in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask_wtf) (3.1.2)
+Requirement already satisfied: Werkzeug>=3.0.0 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (3.0.1)
+Requirement already satisfied: Jinja2>=3.1.2 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (3.1.3)
+Requirement already satisfied: click>=8.1.3 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (8.1.7)
+Requirement already satisfied: blinker>=1.6.2 in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from flask->flask_wtf) (1.7.0)
+Requirement already satisfied: markupsafe in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from wtforms->flask_wtf) (2.1.5)
+Requirement already satisfied: colorama in c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\lib\site-packages (from click>=8.1.3->flask->flask_wtf) (0.4.6)
+
+[notice] A new release of pip is available: 23.3.1 -> 24.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\__main__.py", line 22, in <module>
+    from pip._internal.cli.main import main as _main
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\cli\main.py", line 10, in <module>
+    from pip._internal.cli.autocompletion import autocomplete
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\cli\autocompletion.py", line 10, in <module>
+    from pip._internal.cli.main_parser import create_main_parser
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\cli\main_parser.py", line 9, in <module>
+    from pip._internal.build_env import get_runnable_pip
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\build_env.py", line 19, in <module>
+    from pip._internal.cli.spinners import open_spinner
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\cli\spinners.py", line 9, in <module>
+    from pip._internal.utils.logging import get_indentation
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\utils\logging.py", line 29, in <module>
+    from pip._internal.utils.misc import ensure_dir
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\utils\misc.py", line 43, in <module>
+    from pip._internal.exceptions import CommandError, ExternallyManagedEnvironment
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_internal\exceptions.py", line 18, in <module>
+    from pip._vendor.requests.models import Request, Response
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_vendor\requests\__init__.py", line 45, in <module>
+    from .exceptions import RequestsDependencyWarning
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_vendor\requests\exceptions.py", line 9, in <module>
+    from .compat import JSONDecodeError as CompatJSONDecodeError
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_vendor\requests\compat.py", line 10, in <module>
+    from pip._vendor import chardet
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_vendor\chardet\__init__.py", line 24, in <module>
+    from .universaldetector import UniversalDetector
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_vendor\chardet\universaldetector.py", line 52, in <module>
+    from .sbcsgroupprober import SBCSGroupProber
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_vendor\chardet\sbcsgroupprober.py", line 30, in <module>
+    from .hebrewprober import HebrewProber
+  File "c:\tmp\a1\groups\target\venv\build\cpython-3.12.2.final.0\Lib\site-packages\pip\_vendor\chardet\hebrewprober.py", line 32, in <module>
+    from .sbcharsetprober import SingleByteCharSetProber
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1142, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1209, in _cache_bytecode
+  File "<frozen importlib._bootstrap_external>", line 626, in _calc_mode
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+KeyboardInterrupt

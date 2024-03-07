@@ -5,7 +5,6 @@ import os
 import sqlite3
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
-from flask_wtf.csrf import CSRFProtect
 
 def get_db_connection():
     """ Function that gets connection to the database."""
@@ -24,10 +23,7 @@ def get_group(group_id):
     return group_obj
 
 app = Flask(__name__)
-SECRET_KEY = os.urandom(32)
-app.config['SECRET_KEY'] = SECRET_KEY
-csrf = CSRFProtect()
-csrf.init_app(app)
+app.config['SECRET_KEY'] = os.getenv("FLASK_SECRET_KEY")
 
 @app.route('/')
 def index():
