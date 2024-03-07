@@ -1,3 +1,4 @@
+"""Module providing REST APIs for CRUD operations."""
 # reference: https://www.digitalocean.com/community/tutorials/
 #            how-to-make-a-web-application-using-flask-in-python-3
 import sqlite3
@@ -5,11 +6,13 @@ from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 
 def get_db_connection():
+    """ Function that gets connection to the database."""
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row
     return conn
 
 def get_group(group_id):
+    """ Function that gets group for given id."""
     conn = get_db_connection()
     group = conn.execute('SELECT * FROM groups WHERE id = ?',
                         (group_id,)).fetchone()
@@ -23,6 +26,7 @@ app.config['SECRET_KEY'] = 'your secret key'
 
 @app.route('/')
 def index():
+    """ Function that list groups."""
     conn = get_db_connection()
     groups = conn.execute('SELECT * FROM groups').fetchall()
     conn.close()
@@ -30,15 +34,18 @@ def index():
 
 @app.route('/about')
 def about():
-      return render_template('about.html')
+    """ Function that show application information."""
+    return render_template('about.html')
 
 @app.route('/<int:group_id>')
 def group(group_id):
+    """ Function that shows group information."""
     group = get_group(group_id)
     return render_template('group.html', group=group)
 
 @app.route('/create', methods=('GET', 'POST'))
 def create():
+    """ Function that allows to creates a new group."""
     if request.method == 'POST':
         name = request.form['name']
         member1 = request.form['member1']
@@ -60,6 +67,7 @@ def create():
 
 @app.route('/<int:id>/edit', methods=('GET', 'POST'))
 def edit(id):
+    """ Function that allows to ed existing group."""
     group = get_group(id)
 
     if request.method == 'POST':
@@ -85,6 +93,7 @@ def edit(id):
 
 @app.route('/<int:id>/delete', methods=('POST',))
 def delete(id):
+    """ Function that allows to delete an existing group."""
     group = get_group(id)
     conn = get_db_connection()
     conn.execute('DELETE FROM groups WHERE id = ?', (id,))
