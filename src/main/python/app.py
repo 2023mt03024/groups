@@ -66,10 +66,10 @@ def create():
             return redirect(url_for('index'))
     return render_template('create.html')
 
-@app.route('/<int:id>/edit', methods=('GET', 'POST'))
-def edit(id):
+@app.route('/<int:group_id>/edit', methods=('GET', 'POST'))
+def edit(group_id):
     """ Function that allows to ed existing group."""
-    group_obj = get_group(id)
+    group_obj = get_group(group_id)
 
     if request.method == 'POST':
         name = request.form['name']
@@ -86,20 +86,20 @@ def edit(id):
             conn.execute('UPDATE groups SET name = ?, member1 = ?, member2 = ?, member3 = ?,'+
                          ' member4 = ?, member5 = ?'
                          ' WHERE id = ?',
-                         (name, member1, member2, member3, member4, member5, id))
+                         (name, member1, member2, member3, member4, member5, group_id))
             conn.commit()
             conn.close()
             return redirect(url_for('index'))
 
     return render_template('edit.html', group=group_obj)
 
-@app.route('/<int:id>/delete', methods=('POST',))
-def delete(id):
+@app.route('/<int:group_id>/delete', methods=('POST',))
+def delete(group_id):
     """ Function that allows to delete an existing group."""
-    group_obj = get_group(id)
+    group_obj = get_group(group_id)
     conn = get_db_connection()
-    conn.execute('DELETE FROM groups WHERE id = ?', (id,))
+    conn.execute('DELETE FROM groups WHERE id = ?', (group_id,))
     conn.commit()
     conn.close()
-    flash('"{}" was successfully deleted!'.format(group_obj['name']))
+    flash(f'"{group_obj['name']}" was successfully deleted!')
     return redirect(url_for('index'))

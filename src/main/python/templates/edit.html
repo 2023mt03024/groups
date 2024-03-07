@@ -58,7 +58,7 @@
 </form>
 <hr>
 
-<form action="{{ url_for('delete', id=group['id']) }}" method="POST">
+<form action="{{ url_for('delete', group_id=group['id']) }}" method="POST">
     <input type="submit" value="Delete Group"
             class="btn btn-danger btn-sm"
             onclick="return confirm('Are you sure you want to delete this group?')">
