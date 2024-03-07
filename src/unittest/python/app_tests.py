@@ -64,6 +64,13 @@ class AppTest(unittest.TestCase):
         assert response.status_code == 302  
 
     def test_delete_group2(self):
+        # Define the environment variables before running pyb
+        # Windows
+        #set FLASK_KEY=SECRET_KEY
+        #set FLASK_KEY_VALUE=SECRET_VALUE
+        # linux
+        # export FLASK_KEY=SECRET_KEY
+        # export FLASK_KEY_VALUE=SECRET_VALUE
         response = self.client.post("/2/delete")
         assert response.status_code == 302
 
