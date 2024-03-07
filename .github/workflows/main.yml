@@ -49,6 +49,8 @@ jobs:
      
       - name: Build and Test
         run: pyb
+        env:
+          FLASK_SECRET_KEY: ${{ secrets.FLASK_SECRET_KEY }}
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v2
