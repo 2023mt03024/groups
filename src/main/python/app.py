@@ -14,12 +14,12 @@ def get_db_connection():
 def get_group(group_id):
     """ Function that gets group for given id."""
     conn = get_db_connection()
-    group = conn.execute('SELECT * FROM groups WHERE id = ?',
+    group_obj = conn.execute('SELECT * FROM groups WHERE id = ?',
                         (group_id,)).fetchone()
     conn.close()
-    if group is None:
+    if group_obj is None:
         abort(404)
-    return group
+    return group_obj
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
@@ -40,8 +40,8 @@ def about():
 @app.route('/<int:group_id>')
 def group(group_id):
     """ Function that shows group information."""
-    group = get_group(group_id)
-    return render_template('group.html', group=group)
+    group_obj = get_group(group_id)
+    return render_template('group.html', group=group_obj)
 
 @app.route('/create', methods=('GET', 'POST'))
 def create():
@@ -58,7 +58,8 @@ def create():
             flash('Name is required!')
         else:
             conn = get_db_connection()
-            conn.execute('INSERT INTO groups (name, member1, member2, member3, member4, member5) VALUES (?, ?, ?, ?, ?, ?)',
+            conn.execute('INSERT INTO groups (name, member1, member2, member3, member4, member5)'+
+                         'VALUES (?, ?, ?, ?, ?, ?)',
                          (name, member1, member2, member3, member4, member5))
             conn.commit()
             conn.close()
@@ -68,7 +69,7 @@ def create():
 @app.route('/<int:id>/edit', methods=('GET', 'POST'))
 def edit(id):
     """ Function that allows to ed existing group."""
-    group = get_group(id)
+    group_obj = get_group(id)
 
     if request.method == 'POST':
         name = request.form['name']
@@ -82,22 +83,23 @@ def edit(id):
             flash('Name is required!')
         else:
             conn = get_db_connection()
-            conn.execute('UPDATE groups SET name = ?, member1 = ?, member2 = ?, member3 = ?, member4 = ?, member5 = ?'
+            conn.execute('UPDATE groups SET name = ?, member1 = ?, member2 = ?, member3 = ?,'+
+                         ' member4 = ?, member5 = ?'
                          ' WHERE id = ?',
                          (name, member1, member2, member3, member4, member5, id))
             conn.commit()
             conn.close()
             return redirect(url_for('index'))
 
-    return render_template('edit.html', group=group)
+    return render_template('edit.html', group=group_obj)
 
 @app.route('/<int:id>/delete', methods=('POST',))
 def delete(id):
     """ Function that allows to delete an existing group."""
-    group = get_group(id)
+    group_obj = get_group(id)
     conn = get_db_connection()
     conn.execute('DELETE FROM groups WHERE id = ?', (id,))
     conn.commit()
     conn.close()
-    flash('"{}" was successfully deleted!'.format(group['name']))
+    flash('"{}" was successfully deleted!'.format(group_obj['name']))
     return redirect(url_for('index'))

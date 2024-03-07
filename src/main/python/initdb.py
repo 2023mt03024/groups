@@ -13,7 +13,7 @@ def initdb():
 
     cur.execute("INSERT INTO groups (name, member1, member2, member3, member4, member5)"+
                  "VALUES (?, ?, ?, ?, ?, ?)",
-                ('Group 1',	'2022MT03577 - Puneet Singh', '2022MT03599 - Murtaz Mastim', 
+                ('Group 1',	'2022MT03577 - Puneet Singh', '2022MT03599 - Murtaz Mastim',
                  '2022MT03564 - Shivraj Dagadi',
                 '2022MT03537 - Paras Jain', '2022MT03593 - Sherine Evangeline Arunodhaya R')
                 )
