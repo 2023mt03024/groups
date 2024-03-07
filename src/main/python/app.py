@@ -1,6 +1,7 @@
 """Module providing REST APIs for CRUD operations."""
 # reference: https://www.digitalocean.com/community/tutorials/
 #            how-to-make-a-web-application-using-flask-in-python-3
+import os
 import sqlite3
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
@@ -23,8 +24,10 @@ def get_group(group_id):
     return group_obj
 
 app = Flask(__name__)
+SECRET_KEY = os.urandom(32)
+app.config['SECRET_KEY'] = SECRET_KEY
 csrf = CSRFProtect()
-csrf.init_app(app) 
+csrf.init_app(app)
 
 @app.route('/')
 def index():
