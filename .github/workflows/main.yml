@@ -73,7 +73,6 @@ jobs:
         args: >
           -Dsonar.organization=2023mt03024
           -Dsonar.projectKey=2023mt03024_groups
-          -Dsonar.python.coverage.reportPaths=target/reports/groups_coverage.xml
           -Dsonar.sources=src/main
           -Dsonar.test.exclusions=src/unittest/**
           -Dsonar.verbose=true
